@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(
   cors({
     origin: `http://localhost:3000`, //클라이언트의 오리진
-    method: ["GET", "POST", "PATCH", "DELETE", "OPTION"],
+    method: ["GET", "POST", "PATCH", "DELETE", "PUT", "OPTION"],
     credentials: true,
   })
 );
