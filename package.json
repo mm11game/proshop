@@ -1,0 +1,26 @@
+{
+  "name": "mern-economy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon back/server.js",
+    "server": "nodemon back/server.js",
+    "client": "npm start --prefix front",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "importData": "node back/seeder",
+    "destroyData": "node back/seeder -d"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "mongoose": "^5.12.14",
+    "nodemon": "^2.0.7"
+  }
+}
